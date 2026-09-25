@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Energy - Gianluigi Campagna</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f8;
+    color: #173042;
+}
+
+.hero {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(5,35,45,0.55), rgba(5,35,45,0.70)),
+        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.brand {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.company {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 31px;
+    line-height: 1.25;
+    margin: 0;
+    text-shadow: 0 2px 7px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 18px auto 0;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: -45px auto 40px;
+    padding: 32px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.14);
+    position: relative;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.intro {
+    color: #68777e;
+    margin-bottom: 28px;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccd8dd;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #fbfdfe;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #23879a;
+    box-shadow: 0 0 0 3px rgba(35,135,154,0.10);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.privacy {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #68777e;
+    margin: 20px 0;
+}
+
+.privacy input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #eab52b;
+    color: #173042;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #dca91f;
+}
+
+.note {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #718087;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 0 20px 30px;
+    font-size: 12px;
+    color: #718087;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 480px;
+    }
+
+    .brand {
+        font-size: 35px;
+    }
+
+    .company {
+        font-size: 19px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .form-container {
+        width: calc(100% - 24px);
+        padding: 22px 18px;
+        margin-top: -40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="brand">GREEN ENERGY</div>
+
+        <div class="company">di Gianluigi Campagna</div>
+
+        <div class="subtitle">Soluzioni energetiche</div>
+
+        <h1>
+            Richiedi informazioni per il tuo impianto fotovoltaico
+        </h1>
+
+        <p>
+            Compila il modulo per ricevere maggiori informazioni
+            e scoprire la soluzione energetica più adatta alle tue esigenze.
+        </p>
+
+    </div>
+
+</header>
+
+<main class="form-container">
+
+    <h2>Richiedi informazioni</h2>
+
+    <p class="intro">
+        Inserisci i tuoi dati e ti ricontatteremo per approfondire la tua richiesta.
+    </p>
+
+    <form
+        action="https://formsubmit.co/campagna.gianluigi@gmail.com"
+        method="POST"
+    >
+
+        <input
+            type="hidden"
+            name="_subject"
+            value="Nuova richiesta informazioni - Green Energy"
+        >
+
+        <input
+            type="hidden"
+            name="_template"
+            value="table"
+        >
+
+        <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+        >
+
+        <div class="field">
+            <label for="nome">Nome *</label>
+            <input
+                type="text"
+                id="nome"
+                name="Nome"
+                autocomplete="given-name"
+                required
+            >
+        </div>
+
+        <div class="field">
+            <label for="cognome">Cognome *</label>
+            <input
+                type="text"
+                id="cognome"
+                name="Cognome"
+                autocomplete="family-name"
+                required
+            >
+        </div>
+
+        <div class="field">
+            <label for="telefono">Numero di telefono *</label>
+            <input
+                type="tel"
+                id="telefono"
+                name="Telefono"
+                autocomplete="tel"
+                required
+            >
+        </div>
+
+        <div class="field">
+            <label for="citta">Città *</label>
+            <input
+                type="text"
+                id="citta"
+                name="Città"
+                autocomplete="address-level2"
+                required
+            >
+        </div>
+
+        <div class="field">
+            <label for="impianto">
+                Che tipo di impianto fotovoltaico ti interessa?
+            </label>
+
+            <select id="impianto" name="Tipo di impianto">
+
+                <option value="">
+                    Seleziona un'opzione
+                </option>
+
+                <option>
+                    Impianto fotovoltaico per abitazione
+                </option>
+
+                <option>
+                    Fotovoltaico con sistema di accumulo
+                </option>
+
+                <option>
+                    Potenziamento di un impianto esistente
+                </option>
+
+                <option>
+                    Impianto per azienda / attività
+                </option>
+
+                <option>
+                    Non so ancora, vorrei un consiglio
+                </option>
+
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="esistente">
+                Hai già un impianto fotovoltaico?
+            </label>
+
+            <select id="esistente" name="Impianto esistente">
+
+                <option value="">
+                    Seleziona un'opzione
+                </option>
+
+                <option>Sì</option>
+                <option>No</option>
+
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="messaggio">
+                Messaggio o informazioni aggiuntive
+            </label>
+
+            <textarea
+                id="messaggio"
+                name="Messaggio"
+                placeholder="Scrivi qui eventuali esigenze, dubbi o informazioni..."
+            ></textarea>
+        </div>
+
+        <label class="privacy">
+
+            <input
+                type="checkbox"
+                name="Consenso privacy"
+                value="Accettato"
+                required
+            >
+
+            <span>
+                Acconsento al trattamento dei dati inseriti
+                per essere ricontattato in merito alla mia richiesta. *
+            </span>
+
+        </label>
+
+        <button type="submit">
+            RICHIEDI INFORMAZIONI
+        </button>
+
+        <div class="note">
+            I dati inseriti saranno utilizzati esclusivamente
+            per gestire la richiesta di informazioni.
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+    Green Energy di Gianluigi Campagna · Soluzioni energetiche
+</footer>
+
+</body>
+</html>
