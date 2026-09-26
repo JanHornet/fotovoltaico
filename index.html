@@ -124,6 +124,12 @@ textarea {
     resize: vertical;
 }
 
+/* PRIVACY */
+
+.privacy-box {
+    margin: 25px 0;
+}
+
 .privacy {
     display: flex;
     gap: 10px;
@@ -131,14 +137,31 @@ textarea {
     font-size: 13px;
     line-height: 1.5;
     color: #68777e;
-    margin: 20px 0;
+    margin: 16px 0;
+    font-weight: normal;
 }
 
 .privacy input {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 2px;
+}
+
+.privacy a {
+    color: #23879a;
+    text-decoration: underline;
+}
+
+.privacy a:hover {
+    color: #173042;
+}
+
+.privacy-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #173042;
+    margin-bottom: 8px;
 }
 
 button {
@@ -173,6 +196,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+
     .hero {
         min-height: 480px;
     }
@@ -369,29 +393,66 @@ footer {
             ></textarea>
         </div>
 
-        <label class="privacy">
 
-            <input
-                type="checkbox"
-                name="Consenso privacy"
-                value="Accettato"
-                required
-            >
+        <!-- SEZIONE PRIVACY -->
 
-            <span>
-                Acconsento al trattamento dei dati inseriti
-                per essere ricontattato in merito alla mia richiesta. *
-            </span>
+        <div class="privacy-box">
 
-        </label>
+            <div class="privacy-title">
+                Privacy e consenso
+            </div>
+
+            <label class="privacy">
+
+                <input
+                    type="checkbox"
+                    id="privacy"
+                    name="Presa visione privacy"
+                    value="Sì"
+                    required
+                >
+
+                <span>
+                    Dichiaro di aver letto
+                    <a href="privacy.html" target="_blank">
+                        l'informativa privacy
+                    </a>
+                    e accetto il trattamento dei miei dati personali
+                    per la gestione della mia richiesta e per essere
+                    ricontattato in relazione alla stessa. *
+                </span>
+
+            </label>
+
+
+            <label class="privacy">
+
+                <input
+                    type="checkbox"
+                    id="marketing"
+                    name="Consenso marketing"
+                    value="Sì"
+                >
+
+                <span>
+                    Acconsento a ricevere comunicazioni commerciali
+                    e promozionali relative a prodotti, servizi e offerte
+                    riguardanti il settore fotovoltaico e delle energie
+                    rinnovabili.
+                </span>
+
+            </label>
+
+        </div>
+
 
         <button type="submit">
             RICHIEDI INFORMAZIONI
         </button>
 
         <div class="note">
-            I dati inseriti saranno utilizzati esclusivamente
-            per gestire la richiesta di informazioni.
+            Il consenso alle comunicazioni commerciali è facoltativo
+            e il suo mancato conferimento non impedisce l'invio della richiesta.
         </div>
 
     </form>
